@@ -1,0 +1,85 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <h1>Tableau TVA</h1>
+
+  <div class="barre-actions">
+    <button class="btn-ajouter-ligne">Ajouter une ligne</button>
+    <button class="btn-suppr-ligne">Supprimer la dernière ligne</button>
+    <button class="btn-effacer-champs">Effacer les champs</button>
+  </div>
+
+  <div id="journal-actions">
+    <!-- Ici on affichera les actions réalisées -->
+  </div>
+  <div id="conteneur-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Libellé</th>
+          <th>Prix HT</th>
+          <th>TVA</th>
+          <th>Prix TTC</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="model-ligne">
+          <td><input class="input-libelle" type="text" placeholder="Libellé"></td>
+          <td><input class="input-ht" type="number" placeholder="Prix HT"></td>
+          <td>
+            <select class="select-tva">
+              <option value="5.5">5,5 %</option>
+              <option value="10">10 %</option>
+              <option value="20">20 %</option>
+            </select></td>
+          <td><input class="input-ttc" type="number" placeholder="Prix TTC"></td>
+          <td>
+            <button class="btn-calculer">Calculer</button>
+            <button class="btn-effacer">Effacer</button>
+            <button class="btn-supprimer">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- <div id="conteneur-lignes">
+    <div class="ligne-entete">
+      <div>Libellé</div>
+      <div>Prix HT</div>
+      <div>TVA</div>
+      <div>Prix TTC</div>
+      <div>Actions</div>
+    </div>
+
+    <div class="ligne">
+      <div>
+        <input class="input-libelle" type="text" placeholder="Libellé">
+      </div>
+      <div>
+        <input class="input-ht" type="number" placeholder="Prix HT">
+      </div>
+      <div>
+        <select class="select-tva">
+          <option value="5.5">5,5 %</option>
+          <option value="10">10 %</option>
+          <option value="20">20 %</option>
+        </select>
+      </div>
+      <div>
+        <input class="input-ttc" type="number" placeholder="Prix TTC">
+      </div>
+      <div>
+        <button class="btn-calculer">Calculer</button>
+        <button class="btn-effacer">Effacer</button>
+        <button class="btn-supprimer">Supprimer</button>
+      </div>
+    </div>
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
